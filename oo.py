@@ -89,6 +89,13 @@ class User:
     def update_password(self, current_pwd, new_pwd):
         if self.password == current_pwd:
             self.password = new_pwd
+            print("New Password:", self.password)
+        else:
+            print('Invalid Password')
+
+usr = User("John","1234")
+print(usr.username)
+usr.update_password('1234',4567)
     
 
 """4. Build a Library"""
