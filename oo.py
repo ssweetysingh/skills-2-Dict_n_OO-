@@ -61,7 +61,16 @@ class.
 
 
 """2. Road Class"""
-
+class Road:
+    num_lanes = 2 # class attributes
+    speed_limit = 25
+road_1 = Road()   #Object instantiation
+road_2 = Road()
+print(road_1.num_lanes)
+road_1.num_lanes = 4
+road_1.speed_limit = 60
+print(road_1.num_lanes)
+print(road_2.num_lanes)
 
 # Replace this with your code
 
@@ -148,3 +157,17 @@ class Rectangle:
         """Return the area of the rectangle."""
     
         return self.length * self.width
+
+class Square:
+    def __init__(self, length, width):
+        super().__init__(length, width)
+        def calculate_area(self):
+            if self.length == self.width:
+                return self.length * self.width
+            else:
+                print('Invalid Square')
+sq = Square(4.0,4.2)
+print(sq.calculate_area())
+rect = Rectangle(4.0,4.2)
+print("Area of Rectangle is:",rect.calculate_area)
+
